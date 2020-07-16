@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(6, 100, 112);
+}
+
+.ball-one {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  animation-name: ball-one;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0, 0, 0.57, 0.14);
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-one {
+  0%   {top:0px;}
+  50%  {background-color:red; top:490px;}
+  100% {background-color:purple; top:0px;}
+}
+
+.ball-two {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(173, 163, 154);
+  position: absolute;
+  right: 0;
+  animation-name: ball-two;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0, 0, 0.57, 0.20);
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-two {
+  0%   {background-color:teal; top:0px;}
+  50%  {background-color:yellowgreen;  top:490px;}
+  100% {background-color:blueviolet; top:0px;}
+}
+
+.ball-three {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: goldenrod;
+  position: absolute;
+  left: 43.5vw;
+  animation-name: ball-three;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0, 0, 0.57, 0.14);
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-three {
+  0%   {transform: translateY(0);}
+  25% {
+    background-color: #e91b1b;
+    left: 92vw;
+  }
+  50% {
+    background-color:#2f12b1;
+    transform: translateY(80vh);
+    left: 43.5vw;
+  }
+  87% {
+    left: 0;
+  }
+  100% {
+    background-color:#e99904; 
+    transform: translateY(0);
+  }
+}
+
+
+.ball-four {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(41, 92, 7);
+  position: absolute;
+  right: 43.5vw;
+  animation-name: ball-four;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0, 0, 0.57, 0.14);
+  animation-iteration-count: infinite;
+}
+
+@keyframes ball-four {
+  0%   {transform: translateY(0);}
+  50% {
+    background-color: rgb(216, 35, 126);
+    transform: translateY(40vh);
+    right: 0;
+  }
+  75% {
+    background-color: rgb(99, 24, 102);
+    transform: translateY(80vh);
+    right: 43.5vw;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 4px dashed rgb(124, 7, 7);
+}

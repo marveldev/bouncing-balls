@@ -73,7 +73,6 @@ body {
   }
 }
 
-
 .ball-four {
   width: 100px;
   height: 100px;
@@ -103,7 +102,6 @@ body {
     transform: translateY(0);
   }
 }
-
 
 .footer {
   position: absolute;
